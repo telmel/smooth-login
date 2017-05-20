@@ -39,7 +39,7 @@ class SmoothLogin {
 		}else{
 			//Enqueue scripts - Only one script and one css enqueued here.... 
 			if( !is_admin() ) {
-			    $js_url = trailingslashit(plugin_dir_url(__FILE__))."widget/smooth-login.source.js";
+			    $js_url = trailingslashit(plugin_dir_url(__FILE__))."widget/smooth-login.js";
                 wp_enqueue_script( "smooth-login", $js_url, array( 'jquery' ), null );
                 $css_url = trailingslashit(plugin_dir_url(__FILE__))."widget/widget.css";
                 wp_enqueue_style( "smooth-login", $css_url, array(), null );
