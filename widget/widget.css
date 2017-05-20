@@ -1,0 +1,75 @@
+@charset "utf-8";
+#branding { z-index:9996; } /* a little naughty, twentyeleven fix */
+.sl { margin-bottom:10px; }
+form.sl-form, form.sl-remember, form.sl-register, form.sl-logout { position:relative; }
+.sl table { width:100% !important; margin:0px !important; border:none !important; border-spacing:0; border-collapse:collapse; }
+.sl td,.sl th { padding:0 !important; border-spacing:0; border:none !important; } 
+.sl td { padding-top:7px; vertical-align:top; background-color:none; }
+
+/*Logged out CSS*/
+
+.sl .sl-username-label, .sl .sl-password-label { padding-right:10px; vertical-align:middle; }
+
+/* Styles for all input fields*/
+.sl-username input, .sl-password input, .sl-email input, .sl-remember-email input, .nonstructural input{ 
+margin-bottom: 15px;  
+width:100%;
+padding-left:4% !important; 
+padding-right:4% !important; 
+box-sizing:border-box !important; 
+border: 1px solid #d6d6d6; 
+border-radius: 3px !important; 
+background-color:#fff; }
+
+.nonstructural {
+	border:1px solid transparent !important;
+	background-color:transparent !important;
+	box-shadow: none !important;
+}
+
+.structural {
+	width: 5px; box-shadow: none !important; background-color:transparent !important; border:1px solid transparent !important; color:transparent !important;
+}
+
+.sl-default input::-webkit-input-placeholder { color: #d6d6d6; }
+.sl-default input:-moz-placeholder { /* Firefox 18- */ color: #d6d6d6; }
+.sl-default input::-moz-placeholder {  /* Firefox 19+ */ color: #d6d6d6; }
+.sl-default input:-ms-input-placeholder {   color: #d6d6d6; }
+
+/* Spinner animation block */
+.sl-loading { position:absolute; width:100%; height:100%; background:#FFFFFF url(loading.gif) 50% 50% no-repeat; left:0px; top:0px; opacity:0.8; filter:alpha(opacity=80)}
+
+.sl-status { margin:15px 0px 0px 0px; padding:4% !important;  border-radius:3px; display:block; background-color:transparent; border:none; font-size:12px;}
+.sl-status-invalid, .sl-status-confirm { display:block !important; }
+.sl-status-invalid { background-color:#be4b49; border:0px solid #C00; color: #fff;}
+.sl-status-confirm { background-color:#99cc67; border:0px solid #a8d144; color:#fff;}
+
+/*Logged In CSS*/
+.sl-avatar { vertical-align: middle !important; width:60px !important; padding-right:10px; text-align: center;}
+.sl-info { text-transform:lowercase; width:100% !important; vertical-align: middle !important; font-size:12px; }
+
+/*Forgotten password*/
+.sl-remember { margin-top:10px; display:none; }
+
+/*Registration*/
+.sl-register { margin-top:10px; display:none; }
+
+.sl-form, .sl-logout { margin-top:10px; }
+
+/*OpenID specific*/
+.sl-register hr { display:block; }
+.sl-register #openid_identifier { width:auto; }
+
+.sl-submit-button { vertical-align: middle !important; }
+
+.sl-submit-links {
+	line-height: 1.2 !important;
+	vertical-align: middle !important;
+	width: 100%;
+	font-size:12px;	
+}
+
+#lost, #recovering, #admitting{ table-layout: auto; }
+#sl_wp-submit { margin-right: 20px; }
+#remember-now   { margin-right: 20px; }
+#register-now   { margin-right: 20px; }
